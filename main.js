@@ -1,7 +1,7 @@
 const containers = document.querySelectorAll('.bck-color');
 const colors = ['rgba(255, 0, 0, 0.1)', 'rgb(198, 148, 218, 0.1)', 'rgba(0, 0, 255, 0.1)', 'rgb(148, 218, 169, 0.1)', 'rgba(255, 192, 203, 0.1)', 'rgba(255, 255, 0, 0.1)'];
 
-// alert('This project its a clone of the original sky tree tokyo website.\nEverything was made purely with the intent of implementing my skills in JS, HTML and CSS.\nSome functions are still work in progress.\nTornyai Laurentiu Andrei');
+alert('This project is a replica of the official Sky Tree Tokyo website.\nIt was created with the goal of perfecting my skills in JavaScript, HTML, and CSS.\nSome features are still under development. Some features may differ from the the original.\nThis project was completed by Tornyai Laurentiu Andrei.');
 
 containers.forEach((container, index) => {
   container.addEventListener('mouseenter', function() {
