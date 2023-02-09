@@ -1,0 +1,391 @@
+body {
+    height: 2000px;
+    font-family: -apple-system,"Helvetica Neue","Roboto","游ゴシック体",YuGothic,"Yu Gothic","ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ","Meiryo",sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tickets-inout-menu {
+    position: fixed;
+    z-index: 100;
+    transform: translateX(196px);
+    top: 195px;
+    right: 0px;
+    width: 248px;
+    height: 213px;
+    cursor: pointer;
+}
+
+.inout-menu-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@keyframes scrollInOut {
+    0% {
+        transform: translateX(196px)
+    }
+
+    100% {
+        transform: translateX(5px)
+    }
+}
+
+@keyframes scrollInOutBack {
+    0% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(196px)
+    }
+}
+
+.header-utility {
+    min-width: 1400px;
+    height: 59px;
+    background-color: rgba(127, 179, 197, 0.9);
+}
+
+.header-in {
+    display: block;
+}
+
+.header-utility-btns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 320px;
+    cursor: pointer;
+}
+
+.header-lang, .header-search, .header-site, .header-town {
+    display: flex;
+    margin: 0px;
+    height: 59px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header-lang {
+    min-width: 149px;
+}
+
+.header-search {
+    min-width: 215px;
+}
+
+.header-site {
+    min-width: 186px;
+}
+
+.header-town {
+    min-width: 211px;
+}
+
+.header-lang:hover, .header-search:hover, .header-site:hover, .header-town:hover {
+    background-color: rgba(242, 245, 247, 0.2);
+}
+  
+.header-lang img, .header-search img {
+    padding-right: 10px;
+}
+
+.header-utility-pic img {
+    padding-top: 5px;
+    width: 77px;
+}
+
+img{
+    width: 22px;
+    cursor: default;
+}
+
+.center-div {
+  width: auto;
+  min-width: 1400px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 93px;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo-img-container {
+    margin: 0px;
+    padding: 0px;
+    min-width: 226px; 
+    min-height: 151px;
+    cursor: pointer;
+    transform: translateY(-24px);
+}
+
+.logo-img-container img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-img-container {
+    display: flex;
+    justify-content: left;
+    min-width: 930px;
+    max-width: 930px;
+    overflow: hidden;
+    height: 93px;
+    margin-left: 70px;
+    float: left;
+    background-image: url('https://www.tokyo-skytree.jp/en/common/img/gnavi.jpg');
+}
+
+.tickets-container, .access-container, .floor-container, .shop-container, .exp-container, .faq-container {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 154px;
+    height: 93px;
+    cursor: pointer;
+}
+
+.content-main-container {
+    margin-top: 50px;
+    width: 100%;
+    min-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    margin-left: 100px;
+    min-width: 1400px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.content-left-side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    box-shadow: 0px 0px 2px 0px rgba(232, 117, 129, 1);
+    background-color: #fdeff0;
+    border-radius: 10px;
+}
+
+.ticket-btn1, .ticket-btn2, .ticket-btn3, .ticket-btn4 {
+    width: 200px;
+    color: rgba(232, 117, 129, 1);
+    padding-top: 20px;
+    height: 40px;
+}
+
+.ticket-btn1 {
+    border-bottom: 1px dotted rgba(232, 117, 129, 1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ticket-btn3 {
+    border-top: 1px dotted rgba(232, 117, 129, 1);
+    border-bottom: 1px dotted rgba(232, 117, 129, 1);
+}
+
+.ticket-btn1:hover, .ticket-btn2:hover, .ticket-btn3:hover, .ticket-btn4:hover {
+    color: rgb(12, 12, 12, 0.9);
+    background-color: rgba(252, 252, 252, 0.9);
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+.btn-active-class {
+    background-color: rgba(232, 117, 129, 0.8);
+    color:rgba(252, 252, 252, 0.9);
+}
+
+.content-right-side-container {
+    width: 1020px;
+    height: 120px;
+}
+
+.text-container {
+    font-family: -apple-system,"Helvetica Neue","Roboto","游ゴシック体",YuGothic,"Yu Gothic","ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ","Meiryo",sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(48, 45, 45, 0.9);
+}
+
+.tickets-btns-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tickets-options {
+    width: 299px;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.tickets-options:hover {
+    opacity: 0.6;
+}
+
+.tick-op1 {
+    background-color: rgb(246, 179, 119, 1);
+}
+
+.tick-op2 {
+    background-color: rgb(126, 189, 220, 1);
+}
+
+.tick-op3 {
+    background-color: rgb(166, 209, 159, 1);
+}
+
+.tick-op3 img {
+    transform: translateY(-9px);
+}
+
+.arrow {
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 5px;
+}
+
+.main-content-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.advance-ticket-container {
+    text-align: center;
+    background-color: rgb(246, 179, 119, 1);
+    width: 960px;
+    height: 200px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.same-day-container {
+    text-align: center;
+    background-color: rgb(126, 189, 220, 1);
+    width: 960px;
+    height: 200px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.skytree-container {
+    text-align: center;
+    background-color: rgb(166, 209, 159, 1);
+    width: 960px;
+    height: 200px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.code-slide-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.sometext {
+    transform: translateX(135px);
+}
+
+.slide-btn {
+    color: whitesmoke;
+    width: 250px;
+    height: 70px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgba(232, 117, 129, 1);
+    background-color: rgba(232, 117, 129, 0.8);
+    transform: translateX(135px);
+}
+
+.slides-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    min-width: 950px;
+    width: 950px;
+    height: 500px;
+    overflow: hidden;
+    transform: translateX(135px);
+    position: relative;
+    background-color: rgba(235, 223, 224, 0.3);
+}
+
+.slides-img::before {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    background-color: rgba(218, 199, 199, 0.5);
+}
+
+.slides-img::after {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.screenshots {
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 450px;
+}
