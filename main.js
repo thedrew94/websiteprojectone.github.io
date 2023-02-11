@@ -1,5 +1,4 @@
 ('use strict');
-
 const containers = document.querySelectorAll('.bck-color');
 const colors = ['rgba(255, 0, 0, 0.1)', 'rgb(198, 148, 218, 0.1)', 'rgba(0, 0, 255, 0.1)', 'rgb(148, 218, 169, 0.1)', 'rgba(255, 192, 203, 0.1)', 'rgba(255, 255, 0, 0.1)'];
 
@@ -19,6 +18,25 @@ containers.forEach((container, index) => {
     this.style.opacity = '';
   });
 });
+
+
+window.addEventListener('scroll', function() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    const navMenu = document.querySelector('.center-div'); 
+    const headerContainer = document.querySelector('.header-links');
+    navMenu.style.animation = 'shrinkIn 0.6s linear forwards';
+    headerContainer.style.boxShadow = '2px 2px 4px rgba(0, 0, 0, 0.1)';
+    const logoSkyTree = document.querySelector('.logo-skytree');
+    // logoSkyTree.src = 'https://www.tokyo-skytree.jp/common/img/header_logo_fixed.png'
+
+  } else {
+    const navMenu = document.querySelector('.center-div'); 
+    const headerContainer = document.querySelector('.header-links');
+    navMenu.style.animation = 'shrinkBack 0.6s linear forwards';
+    headerContainer.style.boxShadow = '0px 0px 0px';
+  }
+});
+
 
 const tbs = document.querySelectorAll('.tb');
 tbs.forEach(function(tb) {
@@ -81,4 +99,28 @@ screenshots.forEach((s, i) => {
   s.style.transition = "transform 0.5s";
   s.style.transform = `translateX(${100 * (i - curSlide)}%)`;
 });
+});
+
+
+const headerLang = document.querySelector('.header-lang');
+const headerIndex = document.querySelector('.header-utility');
+const modalWindow = document.querySelector('.modal-window-lang');
+
+let modalDisplay = 'none';
+let headerIndexprop = 200;
+
+headerLang.addEventListener('click', function() {
+  headerLang.classList.toggle('header-lang-onclick');
+
+  if (modalDisplay === 'none' && headerIndexprop === 200) {
+    modalWindow.style.display = 'block';
+    headerIndex.style.zIndex = 1000;
+    modalDisplay = 'block';
+    headerIndexprop = 1000;
+  } else if (modalDisplay === 'block') {
+    modalWindow.style.display = 'none';
+    headerIndex.style.zIndex = 200;
+    modalDisplay = 'none';
+    headerIndexprop = 200;
+  }
 });
