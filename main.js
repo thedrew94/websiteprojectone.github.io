@@ -2,10 +2,10 @@
 const containers = document.querySelectorAll('.bck-color');
 const colors = ['rgba(255, 0, 0, 0.1)', 'rgb(198, 148, 218, 0.1)', 'rgba(0, 0, 255, 0.1)', 'rgb(148, 218, 169, 0.1)', 'rgba(255, 192, 203, 0.1)', 'rgba(255, 255, 0, 0.1)'];
 
-// alert("This project is a replica of the official Sky Tree Tokyo website.\n\
-// It was created with the goal of refining my skills in JavaScript, HTML, and CSS.\n\
-// Some features are still under development and may differ from the original.Not yet 100% implemented for phone\n\
-// This project was completed by Tornyai Laurentiu Andrei.");
+alert("This project is a replica of the official Sky Tree Tokyo website.\n\
+It was created with the goal of refining my skills in JavaScript, HTML, and CSS.\n\
+Some features are still under development and may differ from the original.Not yet 100% implemented for phone\n\
+This project was completed by Tornyai Laurentiu Andrei.");
 
 
 containers.forEach((container, index) => {
