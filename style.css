@@ -3,7 +3,11 @@ body {
     font-family: -apple-system,"Helvetica Neue","Roboto","游ゴシック体",YuGothic,"Yu Gothic","ヒラギノ角ゴ ProN","Hiragino Kaku Gothic ProN","メイリオ","Meiryo",sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
+
+html {
+    filter: blur(0px);
+}
 
   .tickets-inout-menu {
     position: fixed;
@@ -210,6 +214,7 @@ img{
     margin-top: 50px;
     width: 100%;
     min-width: 1400px;
+    height: 2000px;
     display: flex;
     justify-content: center;
 }
@@ -368,10 +373,13 @@ img{
 }
 
 .advance-ticket-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: rgb(246, 179, 119, 1);
     width: 960px;
-    height: 200px;
+    height: 500px;
     color: whitesmoke;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -381,7 +389,7 @@ img{
     text-align: center;
     background-color: rgb(126, 189, 220, 1);
     width: 960px;
-    height: 200px;
+    height: 500px;
     color: whitesmoke;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -391,11 +399,89 @@ img{
     text-align: center;
     background-color: rgb(166, 209, 159, 1);
     width: 960px;
-    height: 200px;
+    height: 500px;
     color: whitesmoke;
     margin-bottom: 20px;
     border-radius: 6px;
 }
+
+
+.details-container-outside {
+    background-color: whitesmoke;
+    width: auto;
+    height: 370px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.details-container-outside p {
+    text-align: right;
+    color: black;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.details-container-content {
+    width: auto;
+    height: 310px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+.row1, .row2, .row3 {
+    width: auto;
+    height: auto;
+}
+
+.row1 {
+    background-color: #969696;
+    border-radius: 8px 8px 0px 0px
+} 
+
+.row1::after, .row2::after, .row3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 10px;
+    height: 80px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.row2::after, .row3::after {
+    background-color: rgb(0, 0, 0);
+}
+
+.row1::before, .row2::before, .row3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 10px;
+    height: 80px;
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.row2::before, .row3::before {
+    background-color: rgb(0, 0, 0);
+}
+
+.row2 {
+    border-bottom: dotted #969696 4px;
+}
+
+/* slider end of page */
 
 .code-slide-container {
     width: 100%;
